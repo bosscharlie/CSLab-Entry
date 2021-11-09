@@ -28,8 +28,8 @@
 
 a {
     text-decoration: none;
-    float: left;
-    width: 47.5%;
+    /* float: left;
+    width: 100%; */
 }
 
 span {
@@ -39,19 +39,34 @@ span {
     overflow: hidden; */
 }
 
+.box{
+    box-sizing: border-box;
+    /* margin: 0;
+    padding: 0;
+    border: 0; */
+    padding-top: 0;
+    padding-bottom: 5%;
+    display: flex;
+    flex-direction: column;
+    width:100;
+    flex-grow: 1;
+}
+
 body {
     box-sizing: border-box;
     margin: 0;
     padding: 0;
+    border: 0;
     display: flex;
     /* flex-direction: column; */
-    justify-content: center;
-    /* height: 100vh; */
-    /* width: 100vw; */
-    /* overflow: hidden; */
+    justify-content:flex-start;
+    /* height: 100vh; 
+    width: 100vw;  */
+    /* overflow: scroll; */
     font-family: -apple-system, "Helvetica Neue", "Arial", "Segoe UI", "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", sans-serif;
     background: #222;
 }
+
 
 .block {
     flex: 1;
@@ -77,15 +92,15 @@ body {
     background: #444;
 }
 
-.block.jielabs {
+.block.blue {
     --theme-color: #4068E0;
 }
 
-.block.thinpad {
+.block.red {
     --theme-color: #B12B2B;
 }
 
-.block.routerlab {
+.block.green {
     --theme-color: #2B9739;
 }
 
@@ -116,6 +131,11 @@ body {
     -webkit-transform: translateX(30px);
     transform: translateX(30px);
     margin-left: -30px;
+    margin-right: 5%;
+    /* margin: 0; */
+    /* padding: 0; */
+    /* border: 0; */
+    text-align: left;
     color: rgba(255, 255, 255, .1);
     font-weight: bolder;
     font-size: 128px;
@@ -137,7 +157,7 @@ body {
     color: white;
     padding: 120px 20px 5px 20px;
     height: 185px;
-    text-align: left;
+    text-align: center;
     width: 100%;
     font-family: 'Roboto Mono', sans-serif;
     -webkit-clip-path: polygon(0% 45px, 100% 0, 100% 100%, 0% 100%);
@@ -177,7 +197,7 @@ body {
     background: #333;
     width: 100%;
     padding: 0 20px 60px 20px;
-    text-align: left;
+    text-align: center;
     color: rgba(255, 255, 255, .7);
     margin-bottom: -40px;
     font-size: 18px;
