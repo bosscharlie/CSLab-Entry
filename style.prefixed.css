@@ -151,7 +151,7 @@ body {
     font-weight: 900;
     color: white;
     padding: 120px 20px 5px 20px;
-    height: 185px;
+    height: 180px;
     text-align: center;
     width: 100%;
     font-family: 'Roboto Mono', sans-serif;
@@ -202,11 +202,14 @@ body {
 
 .link {
     position: absolute;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    line-height: 65px;
+    /* bottom: 0; */
+    /* left: 0; */
+    /* right: 0; */
+    top: -20px;
+    line-height: 200px;
     padding: 0 20px;
+    height: 150px;
+    /*link文字的高度*/
     color: white;
     -webkit-transform-origin: 0 0;
     transform-origin: 0 0;
@@ -221,9 +224,16 @@ body {
     font-family: 'Roboto Mono', monospace;
 }
 
+.sublink {
+    font-size: 25px;
+    color: white;
+    font-family: 'Roboto Mono', monospace;
+}
+
 .block:hover .bottom {
-    -webkit-transform: translateY(119px);
-    transform: translateY(119px)
+    /* TODO */
+    /* -webkit-transform: translateY(119px);
+    transform: translateY(119px) */
 }
 
 .block:hover .name {
